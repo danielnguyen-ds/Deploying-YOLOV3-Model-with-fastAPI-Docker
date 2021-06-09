@@ -4,6 +4,7 @@
 This is a simple process of deploying [Yolov3](https://pjreddie.com/darknet/yolo/), a computer vision model already pre-trained to detect common objects in pictures, on a web server by using [fastAPI](https://fastapi.tiangolo.com/). Then, we will interact with the server via two methods:
 - fastAPI's built-in client: `server.ipynb` notebook
 - regular code (not some UI): `client.ipynb` notebook
+  
 ![Token in terminal](./assets/car2.jpg) ![Token in terminal](./assets/apples.jpg)
 
  ## Run
@@ -38,4 +39,6 @@ Once we opened that link, click in the `/work` directory and we should see all o
 
 **Note:** To stop the container once we are done with the project just press `Ctrl + C` twice. This will also delete the container.
  
-### And... that's it! Have fun deploying a Deep Learning model! :)
+## Credit
+- https://github.com/https-deeplearning-ai/MLEP-public/tree/main/course1/week1-ungraded-lab
+   
