@@ -10,7 +10,7 @@ This is a simple process of deploying [Yolov3](https://pjreddie.com/darknet/yolo
  ## Run
 
 #### 1. Pulling the necessary image from Docker hub
-Docker images can be though as the compilation of all the elements (libraries, files, etc) needed for your software to run. Using the following command will download or pull the image necessary to run this project locally:
+Docker images can be though as the compilation of all the elements (libraries, files, etc) needed for our software to run. Using the following command will download or pull the image necessary to run this project locally:
 ```bash
 docker pull deeplearningai/mlepc1w1-ugl:jupyternb
 ```
