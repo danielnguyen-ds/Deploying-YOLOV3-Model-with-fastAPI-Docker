@@ -1,9 +1,10 @@
 # Deploying Yolov3 model with fastAPI
 
 ## Overview
-This is a simple process of deploying [Yolov3](https://pjreddie.com/darknet/yolo/), a computer vision model already pre-trained in [cvlib](https://www.cvlib.net/) library to detect common objects in pictures, on a web server by using [fastAPI](https://fastapi.tiangolo.com/). Then, we will interact with the server via two methods:
-- fastAPI's built-in client: `server.ipynb` notebook
-- regular code (not some UI): `client.ipynb` notebook
+This project is about deploying [Yolov3](https://pjreddie.com/darknet/yolo/), which is a computer vision model already pre-trained in [cvlib](https://www.cvlib.net/) library to detect common objects in pictures, on a web server by using [fastAPI](https://fastapi.tiangolo.com/). 
+To achive the goal, we need to run two following Jupyter notebooks respecitvely:
+- `server.ipynb` notebook: obtains/deploys the model on the server and also builds the fastAPI's built-in client for the server-client interaction.
+- `client.ipynb` notebook: builds the regular code (not some UI) for the server-client interaction.
   
 ![Token in terminal](./assets/car2.jpg) ![Token in terminal](./assets/apples.jpg)
 
@@ -28,10 +29,10 @@ Let's break down this command and its flags:
 
 - --rm: Deletes the container after stopping it.
 - -p: Allows us to map a port in our computer to a port in the container. In this case, we need a port for the Jupyter server and another for the server we will run within the project.
-- --mount: Allows us to mount a directory in the local filesystem within the container. In this case, we are mounting the current directory `Deploy-YOLOV3-Model-with-fastAPI` onto the `/home/jovyan/work` directory inside the container. This is very important because if no mounts are present, changes to files will not persist after the container is deleted. 
+- --mount: Allows us to mount a directory in the local filesystem within the container. In this case, we are mounting the current directory `Deploy-YOLOV3-Model-with-fastAPI` onto the `/home/jovyan/work` directory inside the container. This is very important because **if no mounts are present, changes to files will not persist after the container is deleted**. 
   
 #### 3. Launching Jupyter Lab 
-When the container starts running, the URL of the Jupyter notebook will be printed in the terminal like the image below. 
+When the container starts running, the URL of the Jupyter notebook will be printed in the terminal like the following image: 
 
 ![Token in terminal](./assets/token.png)
  
