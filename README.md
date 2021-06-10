@@ -35,7 +35,7 @@ When the container starts running, the URL of the Jupyter notebook will be print
 
 ![Token in terminal](./assets/token.png)
  
-Once we opened that link, click in the `/work` directory and we should see all of the files from the current local directory. Look for the `server.ipynb`  and  `client.ipynb` files and open them to begin.
+Once we have opened that link, click in the `/work` directory and we should see all of the files from the current local directory. Look for the `server.ipynb`  and  `client.ipynb` files and open them to begin.
 
 **Note:** To stop the container once we are done with the project just press `Ctrl + C` twice. This will also delete the container.
  
