@@ -9,7 +9,7 @@ To achive the goal, we need to run two following Jupyter notebooks **respecitvel
   
 ![Token in terminal](./assets/car2.jpg) ![Token in terminal](./assets/apples.jpg)
 
- ## Run
+ ## Steps
 
 #### 1. Pulling the necessary image from Docker hub
 Docker images can be though as the compilation of all the elements (libraries, files, etc) needed for our software to run. Using the following command will download or pull the image necessary to run this project locally:
