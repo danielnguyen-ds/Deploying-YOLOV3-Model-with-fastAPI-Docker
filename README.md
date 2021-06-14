@@ -1,7 +1,7 @@
 # Deploying Yolov3 model with fastAPI
 
 ## Overview
-This project is about deploying [Yolov3](https://pjreddie.com/darknet/yolo/), which is a computer vision model already pre-trained in [cvlib](https://www.cvlib.net/) library to detect common objects in pictures, on a web server by using [fastAPI](https://fastapi.tiangolo.com/). 
+This project is using [fastAPI](https://fastapi.tiangolo.com/) to deploy [Yolov3](https://pjreddie.com/darknet/yolo/), which is a computer vision model already pre-trained in [cvlib](https://www.cvlib.net/) library to detect common objects in pictures, on a web server. 
 
 To achive the goal, we need to run two following Jupyter notebooks **respecitvely**:
 - `server.ipynb`: obtains/deploys the model on the server and also builds the fastAPI's built-in client for the server-client interaction.
